@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZEIKKI</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- icon font cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/css.css">
+ <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;500&family=Moulpali&family=Noto+Serif+Khmer:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Noto+Serif+Khmer:wght@400;600&display=swap" rel="stylesheet"> 
+  <!-- FavIcon -->
+   <link rel="icon" type="image/x-icon" href="img/logo.png">
+</head>
+<body>
+  <header class="">
+    <nav class=" border-gray-200 dark:bg-gray-900">
+      <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="img/logo.png"
+            class="h-[35px] w-[85px] lg:w-[122px] lg:h-[50px] " alt="Flowbite Logo" />
+        </a>
+        <div class="flex md:order-2">
+          <button data-collapse-toggle="navbar-search1" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-search" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class="flex text-[14px] lg:text-[16px] " id="navbar-search">
+            <div class="font-regular mt-[8px] ml-[10px] md:ml-[15px] lg:ml-[24px] lg:mt-[7px]">
+              <a data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+                class="cursor-pointer hover:text-blue-700">ចូល</a>
+            </div>
+            <div
+              class=" font-regular w-[60px] lg:w-[89px] h-[39px] bg-blue-700 rounded-[5px] hover:bg-blue-800  ml-[10px] lg:ml-[20px]">
+              <p class="text-white text-center mt-[8px]  lg:mt-[7px] round-[5px]">
+                <a data-modal-target="authentication-modal1" data-modal-toggle="authentication-modal1"
+                  class="cursor-pointer">ចុះឈ្មោះ</a>
+              </p>
+            </div>
+          </div>
+          <div class="flex text-[14px] lg:text-[16px] " id="data-login">
+            <div
+              class=" font-regular w-[60px] lg:w-[89px] h-[39px] rounded-[5px]  ml-[10px] lg:ml-[20px]">
+                <div class="flex items-center gap-4" id="userProfileSection" style="display: none;">
+                  <div class="font-medium dark:text-white" id="userInfo">
+                    <!-- respone data login --> 
+                  </div>
+              </div>
+            </div>
+            <span class="mt-2 ml-[-30px]">Profile</span>
+          </div>
+         
+        </div>
+        
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 font-regular"
+          id="navbar-search1">
+          
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-[10px] lg:space-x-6 xl:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="index.html"
+                class="block py-2 px-3 text-white text-[13px] lg:text-[16px] bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page">ទំព័រដើម</a>
+            </li>
+            <li>
+              <a href="html/doc.html"
+                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ឯកសារ</a>
+            </li>
+            <li>
+              <a href="html/template.html"
+                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">គំរូ</a>
+            </li>
+            <li>
+              <a href="html/contribute.html"
+                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">រួមចំណែក</a>
+            </li>
+            <li>
+              <a href="html/about.html"
+                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">អំពី​ពួក​យើង</a>
+            </li>
+            <li>
+              <a href="html/contact.html"
+                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ទំនាក់ទំនង</a>
+            </li>
+            <li>
+  
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end navbar section -->
+  <main>
+    <!-- hero section start -->
+    <section>
+      <div class="mx-auto max-w-screen-xl px-4 py-[80px] lg:items-center">
+        <div class="text-center">
+          <p class="xl:text-[44px] lg:text-[42px]  max-sm:text-[24px] sm:text-[26px]">
+            ទាញយក និង ពង្រឹងគម្រោងរបស់អ្នកជាមួយនឹង <br>
+            ប្រភពបើកចំហរគំរូ Taiwind CSS របស់យើង។
+          </p>
+          <p class="mt-4 sm:text-lg/relaxed lg:text-[18px]">
+            រចនាឡើងជាពិសេសសម្រាប់អ្នកអភិវឌ្ឍន៍ដោយអ្នកអភិវឌ្ឍន៍ផ្ទាល់ ទទួលបានគំរូគេហទំព័រមានលក្ខណះ responsive <br>
+            និងមានភាពទាន់សម័័យ ចូលទៅកាន់គំរូនិងទាញយកគេហទំព័រគួរឱ្យភ្ញាក់ផ្អើលចាប់ផ្តើមនៅទីនេះ។
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a class="block w-full rounded bg-blue-700 px-12 py-3 text-sm font-medium text-white shadow hover:bg-white hover:text-black hover:font-bold  focus:outline-none focus:ring sm:w-auto"
+              href="html/template.html">
+              ​​​​​​​ ​ចាប់ផ្តើម
+            </a>
+            <a href="html/template.html"
+              class="block text-blue-700 border-[1px] border-blue-600 w-full rounded px-12 py-3 text-sm font-bold shadow hover:text-black focus:outline-none focus:ring  sm:w-auto"
+              href="/about">
+              មើលគំរូ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bg-blue-700 absolute end-0 buttom-0 mt-[200px] me-2 z-50 text-white px-[14px] py-[10px] rounded-[4px] opacity-0 hover:opacity-2 -->
+    <!-- <a href="" class=" bg-blue-700 absolute end-0 buttom-0 mt-[200px] me-2 z-50 text-white px-[14px] py-[10px] rounded-[4px] ">Preview</a> -->
+    <div class="flex justify-center align-items-center mt-10" id="loading">
+      <img src="../img/loading-gif.gif" class="w-10"  alt="">
+    </div>
+    <section
+      class=" w-fit mx-auto grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2  md:grid-cols-2 justify-items-center justify-center gap-y-8 gap-x-10 mt-10 mb-5 " id="template">
+      <!-- waiting data respone from api -->
+    </section>
+    <div id="404"></div>
+  </main>
+  <br><br>
+  <!--Footer container-->
+  <!-- login -->
+  <!-- Main modal -->
+  <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-1 w-full max-w-md max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 ">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600" id="eng">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Sign in to our platform
+          </h3>
+          <button type="button"
+            class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="authentication-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <section
+          class="container md:p-8 max-w-[460px] mx-auto grid items-center mt-10 p-4 bg-white  rounded-lg shadow " >
+          <h1 class="font-bold text-center text-3xl   py-2 lg:py-2">សូមស្វាគមន៍</h1>
+          <p class="text-center text-xs text-blue-400  pb-4">មិនមានគណនី? ចុះឈ្មោះ</p>
+          <div class="justify-center" <div class=" w-full justify-center items-center">
+            <div class=" flex border rounded-3xl w-full justify-center items-center">
+              <img src="img/search.png" class="w-4 h-4 m-2 " alt="">
+              <p class="opacity-80 text-[14px]">ចូលជាមួយ Google</p>
+            </div>
+            <div class="flex mt-4 border rounded-3xl w-full justify-center items-center">
+              <img src="img/facebook.png" class="w-4 h-4 m-2 ml-6" alt="">
+              <p class=" opacity-80 text-[14px]">ចូលជាមួយ Facebook </p>
+            </div>
+
+          </div>
+          <div class="mt-4">
+            <hr class="text-gray-900">
+            <p class="opacity-80 text-center">OR</p>
+          </div>
+          <div class="">
+            <form id="loginForm" class="space-y-3 justify-center" onsubmit="login(event)">
+              <div>
+                <label for="loginEmail"
+                  class="block mb-1 text-sm font-medium opacity-60 text-[12px] dark:text-white">អុីម៊ែលរបស់អ្នក</label>
+                <input type="text" name="loginEmail" id="loginEmail" placeholder="Email"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  required>
+              </div>
+              <div>
+                <label for="loginPassword" class="block mb-1 text-sm font-medium opacity-60 text-[12px] dark:text-white">លេខកូដសម្ងាត់</label>
+                <input type="password" name="loginPassword" id="loginPassword" placeholder="Password"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                  required>
+              </div>
+              <a href="#" class="text-blue-400 text-xs">ភ្លេចលេខសម្ងាត់?</a>
+              <div class="grid justify-center">
+                <button type="submit"
+                  class="pb-7 bg-blue-500 text-white border border-gray-300 m-2 mr-0 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-[300px] h-10 text-center p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">ចូល</button>
+              </div>
+              <p id="signupMessage" class="text-green-500 text-center text-sm"></p>
+              <p id="signupMessage1" class="text-red-500 text-center text-sm"></p>
+            </form>
+
+          </div>
+      </div>
+    </div>
+    </section>
+  </div>
+
+  <!--end login -->
+  <!-- sign up -->
+  <div id="authentication-modal1" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-0 w-full max-w-md max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700 ">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600" id="eng">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            Login to our platform
+          </h3>
+          <button type="button"
+            class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="authentication-modal1">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <section class="container md:p-8 m-10 mt-10 max-w-[460px] h-[700px] mx-auto grid p-2 bg-white mt-[-14px]">
+          <h1 class="font-bold text-center xl:text-3xl md:text-lg  mb-4 ">បង្កើតគណនី</h1>
+          <p class="text-center text-sm opacity-50 ">តោះចាប់ផ្ដើមជាមួយគណនីរបស់អ្នក</p>
+          <div class="flex mt-2 justify-center items-center ">
+            <div class=" flex border rounded-3xl py-1 px-1 w-9/12 justify-center mt-[-30px] ">
+              <img src="img/search.png" class="w-4 h-4 " alt="">
+              <p class="ml-2 opacity-50 text-[14px]">បង្កើតគណនីជាមួយ google</p>
+            </div>
+            <div class="flex mx-6 mt-[-30px]">
+              <img src="img/twitter.png" class="w-8 h-8 mr-2" alt="">
+              <img src="img/facebook.png" class="w-8 h-8" alt="">
+            </div>
+          </div>
+          <div class="flex">
+            <hr class="w-24 h-0.5 my-4 bg-gray-200 border-0 rounded dark:bg-gray-700">
+            <p class="py-2 mx-2 text-[15px] opacity-50">រឺ ​បង្កើតគណនីជាមួយអុីម៊ែល</p>
+            <hr class="w-24 h-0.5 my-4 bg-gray-300 border-0 rounded dark:bg-gray-700">
+          </div>
+          <div class="">
+            <form id="signupForm" class="space-y-3 justify-center" onsubmit="signup(event)">
+              <div class="flex space-x-6">
+                  <div>
+                      <label for="signupFirstName"
+                          class="mt-2 block mb-1 text-sm font-medium opacity-60 text-[12px] dark:text-white">នាមខ្លួន</label>
+                      <input type="text" name="signupFirstName" id="signupFirstName" placeholder="First Name"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          required>
+                  </div>
+                  <div>
+                      <label for="signupLastName"
+                          class="mt-2 block mb-1 text-sm font-medium opacity-60 text-[12px] dark:text-white">គោត្តនាម</label>
+                      <input type="text" name="signupLastName" id="signupLastName" placeholder="Last Name"
+                          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                          required>
+                  </div>
+              </div>
+              <div>
+                  <label for="signupEmail" class="block mb-1 text-sm font-medium opacity-60 text-[12px] dark:text-white">អ៊ីមែលរបស់អ្នក</label>
+                  <input type="text" name="signupEmail" id="signupEmail" placeholder="Email"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                      required>
+              </div>
+              <div>
+                  <label for="signupUsername" class="block mb-1 text-sm font-medium opacity-60 text-[12px] dark:text-white">ឈ្មោះរបស់អ្នក</label>
+                  <input type="text" name="signupUsername" id="signupUsername" placeholder="Username"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                      required>
+              </div>
+              <div>
+                  <label for="signupPassword" class="block mb-1 text-sm font-medium opacity-60 text-[12px] dark:text-white">លេខសម្ងាត់</label>
+                  <input type="password" name="signupPassword" id="signupPassword" placeholder="Password"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                      required>
+              </div>
+              <div>
+                  <label for="confirmPassword"
+                      class="block mb-1 text-sm font-medium opacity-60 text-[12px] dark:text-white">បញ្ជាក់លេខសម្ងាត់</label>
+                  <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                      required>
+              </div>
+          
+              <!-- Add more fields as needed -->
+          
+              <button type="submit"
+                  class="sm:w-56 lg:w-24 pb-10 bg-blue-500 text-white border border-gray-300 m-2 mr-0 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-96 h-10 text-center p-3 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white">បង្កើតគណនី</button>
+                  <p id="signupMessage2" class="text-green-500 text-center text-sm"></p>
+                  <p id="signupMessage3" class="text-red-500 text-center text-sm"></p>
+          </form>
+          </div>
+          </div>
+      </div>
+      </section>
+    </div>
+    <footer class=" w-full bg-gray-100">
+      <div class="m-auto font-regular w-full max-w-screen-xl p-4 py-4 lg:py-8">
+        <div class="md:flex mx-0  md:justify-between mt-[30px] ">
+          <!-- address -->
+          <div class="m-auto md:m-0 mb-5  w-[300px] md:mb-0">
+            <div class="flex justify-center md:flex-start">
+              <a href="index.html" class="flex items-center lg:ml-[46px]">
+                <img src="img/logo.png" class="h-9 me-3"
+                  alt=" Logo" />
+              </a>
+            </div>
+            <br>
+            <p class="text-center font-bold">អាស័យដ្ឋាន</p>
+            <p class="text-[16px] text-center leading-8"> ផ្លូវ ៥៦២ សង្កាត់ បឹងកក់១​ ខណ្ឌ​ សែនសុខ រាជធានីភ្នំពេញ</p>
+          </div>
+          <div
+            class="grid grid-cols-1 md:w-[900px] lg:ml-[100px] lg:gap-8 gap-6 lg:grid-cols-3 sm:grid-cols-1 text-center">
+            <!-- cover message -->
+            <div class=" md:w-full  lg:w-[400px] items-center">
+              <h2 class="mb-6 text-[20px] font-semibold text-gray-900 uppercase dark:text-white text-center">
+                ផ្ញើសារតាមរយះអុីម៊ែល</h2>
+              <ul class="justify-center flex text-gray-500 lg:w-full dark:text-gray-400 font-medium">
+                <li class="mb-4">
+                  <!-- cover input and send -->
+                  <div data-style="clean" class="flex items-end mb-3">
+                    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                    <div data-element="fields" data-stacked="false"
+                      class="flex items-center w-[400px] max-w-md mb-3 seva-fields formkit-fields">
+                      <div class="relative w-full formkit-field">
+                        <label for="member_email"
+                          class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email
+                          address</label>
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                          <svg class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path
+                              d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z">
+                            </path>
+                            <path
+                              d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z">
+                            </path>
+                          </svg>
+                        </div>
+                        <!-- button input email -->
+                        <input id="member_email"
+                          class="formkit-input  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                          name="email_address" aria-label="Email Address" placeholder="Your email address..." required=""
+                          type="email">
+                      </div>
+                      <button data-element="submit" class="formkit-submit px-2">
+                        <span
+                          class="px-5 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">បញ្ជូន</span>
+                      </button>
+                    </div>
+                </li>
+              </ul>
+            </div>
+            <!-- end cover message -->
+            <div class="lg:ml-[150px] lg:w-[350px]">
+              <h2 class="mb-6 text-[20px] font-semibold text-gray-900 uppercase dark:text-white text-center">
+                ទំនាក់ទំនងតាមរយះ</h2>
+              <ul class="text-gray-500 dark:text-gray-400 font-bold text-center">
+                <li class="mb-4 hover:underline-sky">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:sothibheng23@gmail.com">sothibheng23@gmail.com</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+855718075288" class="hover:underline">+៨៥៥​ ៧១៨ ០៧៥ ២៨៨</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+855718075288" class="hover:underline">+៨៥៥​ ៧១៨ ០៧៥ ២៨៨</a>
+                </li>
+                <li class="mt-4">
+                  <!-- <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-2.5 py-2 text-center me-2 mb-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                  <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-3.5 py-2   text-center me-8 mb-2 hover:text-blue-700"
+                    href="https://web.facebook.com/istad.co" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-2.5 py-2 text-center me-8 mb-2 hover:text-red-700"
+                    href="https://www.youtube.com/@istad7665" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-3 py-2 text-center me-8 mb-2 hover:text-pink-700"
+                    href="#"><i class="fab fa-instagram"></i></a>
+                  <!-- <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-2.5 py-2 text-center me-2 mb-2" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class=" w-full text-center bg-gray-200"><span class="px-2"><i
+            class="fa-solid fa-copyright"></i></span>រក្សាសិទ្ធដោយ Zeikki</p>
+    </footer>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/login _sign.js"></script>
+</body>
+</html>
+

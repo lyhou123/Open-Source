@@ -1,0 +1,16 @@
+.font-regular{
+    font-family: 'Noto Serif Khmer', serif;
+    font-weight: 400;
+}
+.font-bold{
+    font-family: 'Noto Serif Khmer', serif;
+    font-weight: bold;
+}
+.font-inter{
+    font-family: 'Inter', sans-serif;
+}
+.b{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}

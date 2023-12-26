@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;500&family=Moulpali&family=Noto+Serif+Khmer:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Noto+Serif+Khmer:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../img/logo.png">
+</head>
+<body>
+  <header class="">
+    <nav class=" border-gray-200 dark:bg-gray-900 ">
+        <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../img/logo.png" class="h-[35px] w-[85px] lg:w-[122px] lg:h-[50px] " alt="Zeikki" />
+            </a>
+            <div class="flex md:order-2">
+              
+                <button data-collapse-toggle="navbar-search1" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-search" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="flex text-[14px] lg:text-[16px] " id="navbar-search">
+                    <div class="font-regular mt-[8px] ml-[10px] md:ml-[15px] lg:ml-[24px] lg:mt-[7px]">
+                        <a href="../index.html">ចូល</a>
+                    </div>
+                    <div
+                        class=" font-regular w-[60px] lg:w-[89px] h-[39px] bg-blue-700 rounded-[5px] hover:bg-blue-800  ml-[10px] lg:ml-[20px]">
+                        <p class="text-white text-center mt-[8px]  lg:mt-[7px] round-[5px]"><a href="../index.html">ចុះឈ្មោះ</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex text-[14px] lg:text-[16px] " id="data-login">
+                  <div
+                    class=" font-regular w-[60px] lg:w-[89px] h-[39px] rounded-[5px]  ml-[10px] lg:ml-[20px]">
+                      <div class="flex items-center gap-4" id="userProfileSection" style="display: none;">
+                        <div class="font-medium dark:text-white" id="userInfo">
+                          <!-- respone data login --> 
+                        </div>
+                    </div>
+                  </div>
+                  <span class="mt-2 ml-[-30px]">Profile</span>
+                </div>
+
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 font-regular"
+                id="navbar-search1">
+                
+                <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-[10px] lg:space-x-6 xl:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="../index.html"
+                                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded md:bg-transparent md:p-0 md:dark:text-blue-500"
+                                aria-current="page">ទំព័រដើម</a>
+                        </li>
+                        <li>
+                            <a href="doc.html"
+                                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 md:text-blue-700">ឯកសារ</a>
+                        </li>
+                        <li>
+                            <a href="template.html"
+                                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">គំរូ</a>
+                        </li>
+                        <li>
+                            <a href="contribute.html"
+                                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">រួមចំណែក</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">អំពី​ពួក​យើង</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ទំនាក់ទំនង</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <button data-drawer-target="sidebar-multi-level-sidebar" data-drawer-toggle="sidebar-multi-level-sidebar" aria-controls="sidebar-multi-level-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+    <span class="sr-only">Open sidebar</span>
+    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+    </svg>
+  </button>
+  <main class="xl:max-w-screen-xl lg:max-w-screen-xl h-[976px] md:max-w-screen-xl mx-auto relative">
+  <aside id="sidebar-multi-level-sidebar" class="absolute top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+  <div class="h-full px-3 py-6 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+    <ul class="space-y-4 w-[310px] sm:block font-medium">
+      <li class="mt-4">
+        <span class="mx-2 text-[24px] text-gray-800 font-bold">ការចាប់ផ្តើម</span>
+      </li>
+      <li>
+        <a href="doc.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+           <span class="text-[18px] text-gray-700 font-bold">សេចក្តីផ្តើម និងទិដ្ឋភាពទូទៅ</span>
+        </a>
+      </li>
+      <li>
+        <span class="mx-2 text-[18px] text-gray-700 font-bold">រចនាសម្ព័ន្ធឯកសារ</span>
+        <ul>
+          <li class="mt-[10px] text-[18px] mx-4">
+            <a href="#" class="flex items-center text-blue-600 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group" id="eng">
+              Root Directory
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              រចនាសម្ព័ន្ធគំរូ
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              រចនាប័ទ្ម CSS
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              ឯកសាររួមចំណែក
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              រូបភាព
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              ទំព័រ
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="doc-contribute-guidline.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+           <span class="text-[18px] text-gray-700 font-bold">គោលការណ៍ណែនាំអំពីការរួមចំណែក</span>
+        </a>
+      </li>
+      <li>
+        <span class="mx-2 text-[18px] text-gray-700 font-bold">Component</span>
+        <ul >
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="doc-component-accordion.html" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Accordion
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Alert
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="doc-component-avatar.html" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Avatar
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="doc-component-badge.html" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Badge
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="doc-component-card.html" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Card
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Hover Card
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Check-box
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Data Table
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Date Picker
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Dialog
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Dropdown Menu
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Form
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Label
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Menubar
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Popover
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Progress
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Radio Group
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              modal
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Select
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Sheet
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Skeleton
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Switch
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Table
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Textarea
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Toast
+            </a>
+          </li>
+          <li class="mt-[10px] text-[18px] mx-4 text-gray-600">
+            <a href="#" class="flex items-center text-gray-500 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+              Combobox
+            </a>
+          </li>
+        </ul>
+      </li>
+   </ul>   
+  </div>
+ </aside>
+
+ <div class="p-4 sm:ml-64 relative h-screen overflow-hidden">
+  <div class="p-2 flex-1 h-screen overflow-y-auto">
+    <div class="">
+      <div class="">
+        <div class="p-1 relative text-blue-700">
+          <span class="text-gray-600">ឯកសា ></span> រចនាសម្ព័ន្ធឯកសារ
+        </div>
+        <br>
+        <div class="h-auto">
+          <h1 class="text-[24px] font-bold">
+            រចនាសម្ព័ន្ធឯកសារ
+          </h1>
+          <p class="text-[18px] mx-4 mt-2 text-gray-700">
+            Zeikki ធ្វើតាមរចនាសម្ព័ន្ធម៉ូឌុល និងរៀបចំ ដែលលើកកម្ពស់ភាពច្បាស់លាស់ និងភាពងាយស្រួលនៃការប្ដូរតាមបំណង។
+          </p>
+        </div>
+        <br>
+          <div class="w-auto h-auto">
+            <h1 class="text-[20px] font-bold text-gray-700">
+               1.Root directory
+            </h1>
+            <p class="text-[18px] mx-4 mt-2 text-gray-700">
+               នៅក្នុងឯកសារដើម អ្នកនឹងរកឃើញឯកសារសំខាន់ៗ និងការកំណត់ដែលបង្កើតជាមូលដ្ឋានគ្រឹះនៃគេហទំព័ររបសពួកយើង។
+            </p>
+          </div>
+          <br>
+          <div class="w-auto h-auto">
+            <p class="text-[18px] mx-4 mt-2 text-gray-700">
+               Directory សំខាន់ៗគឺជាចំណុចចាប់ផ្តើមសម្រាប់គំរូទាំងមូលរួមមាន:
+            </p>
+          </div>
+          <br>
+          <div class="w-auto h-auto"> 
+            <ul class="list-disc mx-10 text-[26px] text-blue-800">
+               <li class="">
+                <p class="text-[18px] mt-2 text-gray-700">
+                  index.html : ឯកសារ index.html បម្រើជាចំណុចចូលសំខាន់សម្រាប់គេហទំព័ររបស់អ្នក។ វាមានមូលដ្ឋានគ្រឹះរចនាសម្ព័ន្ធ និងធាតុដែលកំណត់គេហទំព័រ។
+                </p>
+               </li>
+               <li class="mt-6">
+                  <p class="text-[18px] mt-2 text-gray-700">
+                     styles/ : រចនាប័ទ្ម/ថតត្រូវបានដាក់ដល់កន្លែងផ្ទុកឯកសារ CSS ទាំងអស់។ ឯកសារទាំងនេះកំណត់រចនាប័ទ្មដែលមើលឃើញនៃគំរូ ធានាបាននូវចំណុចប្រទាក់អ្នកប្រើដែលស្អិតរមួត និងទាក់ទាញដែលអាចមើលឃើញនៅលើគេហទំព័រ។
+                  </p>
+                 </li>
+                 <li class="mt-6">
+                  <p class="text-[18px] mt-2 text-gray-700">
+                     scripts/ : scripts/ directory កន្លែងផ្ទុកឯកសារ JavaScript ដែលនាំមកនូវការធ្វើអន្តរកម្មធ្វើអោយគេហទំព័រកាន់តែទាក់ទាញនិងរស់រវើក។ script ទាំងនេះបង្កើនបទពិសោធន៍អ្នកប្រើប្រាស់ និងបន្ថែមមុខងារទៅទិដ្ឋភាពផ្សេងៗនៃគេហទំព័រ។
+                  </p>
+                 </li>
+                 <li class="mt-6">
+                  <p class="text-[18px] mt-2 text-gray-700">
+                     Images/ : រូបភាព/ថតគឺជាឃ្លាំងសម្រាប់ផ្ទុករូបភាពទាំងអស់ដែលបានប្រើនៅទូទាំងគំរូពីនិមិត្តសញ្ញាទៅរូប ភាពផ្ទៃខាងក្រោយ នេះគឺជាកន្លែងដែលទ្រព្យសម្បត្តិដែលមើលឃើញនៃគេហទំព័ររបស់អ្នកត្រូវបានរក្សាទុក។
+                  </p>
+                 </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ </main>
+ <!-- footer -->
+ <footer class=" w-full  max-sm:mt-[150px]" id="footer">
+  <div class="m-auto font-regular w-full max-w-screen-xl p-4 py-4 lg:py-8">
+    <div class="md:flex mx-0  md:justify-between mt-[30px] ">
+      <!-- address -->
+      <div class="m-auto md:m-0 mb-5  w-[300px] md:mb-0">
+        <div class="flex justify-center md:flex-start">
+          <a href="../index.html" class="flex items-center lg:ml-[46px]">
+            <img src="../img/logo.png" class="h-9 me-3 " alt=" Logo" />
+          </a>
+        </div>
+        <br>
+        <p class="text-center font-bold">អាស័យដ្ឋាន</p>
+        <p class="text-[16px] text-center leading-8"> ផ្លូវ ៥៦២ សង្កាត់ បឹងកក់១​ ខណ្ឌ​ សែនសុខ រាជធានីភ្នំពេញ</p>
+      </div>
+      <div class="grid grid-cols-1 md:w-[900px] lg:ml-[100px] lg:gap-8 gap-6 lg:grid-cols-3 sm:grid-cols-1 text-center">
+        <!-- cover message -->
+        <div class=" md:w-full  lg:w-[400px] items-center">
+          <h2 class="mb-6 text-[20px] font-semibold text-gray-900 uppercase dark:text-white text-center">
+            ផ្ញើសារតាមរយះអុីម៊ែល</h2>
+          <ul class="justify-center flex text-gray-500 lg:w-full dark:text-gray-400 font-medium">
+            <li class="mb-4">
+              <!-- cover input and send -->
+              <div data-style="clean" class="flex items-end mb-3">
+                <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                <div data-element="fields" data-stacked="false"
+                  class="flex items-center w-[400px] max-w-md mb-3 seva-fields formkit-fields">
+                  <div class="relative w-full formkit-field">
+                    <label for="member_email"
+                      class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email
+                      address</label>
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                      <svg class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                        <path
+                          d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z">
+                        </path>
+                        <path
+                          d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z">
+                        </path>
+                      </svg>
+                    </div>
+                    <!-- button input email -->
+                    <input id="member_email"
+                      class="formkit-input  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      name="email_address" aria-label="Email Address" placeholder="Your email address..." required=""
+                      type="email">
+                  </div>
+                  <button data-element="submit" class="formkit-submit px-2">
+                    <span
+                      class="px-5 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">បញ្ជូន</span>
+                  </button>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <!-- end cover message -->
+        <div class="lg:ml-[150px] lg:w-[350px]">
+          <h2 class="mb-6 text-[20px] font-semibold text-gray-900 uppercase dark:text-white text-center">
+            ទំនាក់ទំនងតាមរយះ</h2>
+          <ul class="text-gray-500 dark:text-gray-400 font-bold text-center">
+            <li class="mb-4 hover:underline-sky">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:sothibheng23@gmail.com">sothibheng23@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+855718075288" class="hover:underline">+៨៥៥​ ៧១៨ ០៧៥ ២៨៨</a>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-phone"></i>
+                          <a href="tel:+855718075288" class="hover:underline">+៨៥៥​ ៧១៨ ០៧៥ ២៨៨</a>
+                      </li>
+                      <li class="mt-4">
+                        <!-- <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-2.5 py-2 text-center me-2 mb-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-3.5 py-2   text-center me-8 mb-2 hover:text-blue-700"
+                        href="https://web.facebook.com/istad.co" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-2.5 py-2 text-center me-8 mb-2 hover:text-red-700"
+                        href="https://www.youtube.com/@istad7665" target="_blank"><i class="fab fa-youtube"></i></a>
+                      <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-3 py-2 text-center me-8 mb-2 hover:text-pink-700"
+                        href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-2.5 py-2 text-center me-2 mb-2" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                      </li>
+                    </ul>
+                 </div>
+                </div>
+            </div>
+        </div>
+      <p class=" w-full text-center bg-gray-200"><span class="px-2"><i class="fa-solid fa-copyright"></i></span>រក្សាសិទ្ធដោយ Zeikki</p>
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+<script src="../scripts/login _sign.js"></script>
+</body>
+</html>

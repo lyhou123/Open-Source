@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blogs</title>
+        <link rel="stylesheet" href="../css/css.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;500&family=Moulpali&family=Noto+Serif+Khmer:wght@400;600&display=swap"
+          rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- icon font cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="../img/logo.png">
+      </head>
+<body>
+    <header class="">
+        <nav class=" border-gray-200 dark:bg-gray-900">
+          <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="../img/logo.png"
+                class="h-[35px] w-[85px] lg:w-[122px] lg:h-[50px] " alt="Flowbite Logo" />
+            </a>
+            <div class="flex md:order-2">
+              <button data-collapse-toggle="navbar-search1" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-search" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+              </button>
+              <div class="flex text-[14px] lg:text-[16px] " id="navbar-search">
+                <div class="font-regular mt-[8px] ml-[10px] md:ml-[15px] lg:ml-[24px] lg:mt-[7px]">
+                  <a href="../index.html" class="hover:text-blue-700">ចូល</a>
+                </div>
+                <div
+                  class=" font-regular w-[60px] lg:w-[89px] h-[39px] bg-blue-700 rounded-[5px] hover:bg-blue-800  ml-[10px] lg:ml-[20px]">
+                  <p class="text-white text-center mt-[8px]  lg:mt-[7px] round-[5px]"><a href="../index.html">ចុះឈ្មោះ</a>
+                  </p>
+                </div>
+              </div>
+              <div class="flex text-[14px] lg:text-[16px] " id="data-login">
+                <div
+                  class=" font-regular w-[60px] lg:w-[89px] h-[39px] rounded-[5px]  ml-[10px] lg:ml-[20px]">
+                    <div class="flex items-center gap-4" id="userProfileSection" style="display: none;">
+                      <div class="font-medium dark:text-white" id="userInfo">
+                        <!-- respone data login --> 
+                      </div>
+                  </div>
+                </div>
+                <span class="mt-2 ml-[-30px]">Profile</span>
+              </div>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 font-regular"
+              id="navbar-search1">
+              <div class="relative mt-3 md:hidden">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                  <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                  </svg>
+                </div>
+                <input type="text" id="search-navbar"
+                  class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="ស្វែងរកគំរូ...">
+              </div>
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-[10px] lg:space-x-6 xl:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                  <a href="../index.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px]  rounded md:bg-transparent  md:p-0 md:dark:text-blue-500"
+                    aria-current="page">ទំព័រដើម</a>
+                </li>
+                <li>
+                  <a href="../html/doc.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ឯកសារ</a>
+                </li>
+                <li>
+                  <a href="../html/template.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 md:text-blue-700">គំរូ</a>
+                </li>
+                <li>
+                  <a href="../html/contribute.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">រួមចំណែក</a>
+                </li>
+                <li>
+                  <a href="../html/about.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">អំពី​ពួក​យើង</a>
+                </li>
+                <li>
+                  <a href="../httml/contact.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ទំនាក់ទំនង</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+        <section>
+            <div class="lg:mt-[80px]">
+              <p
+                class="lg:text-[40px] md:text-[30px] max-sm:text-[20px] sm:text-[20px] sm:mt-[20px] max-sm:mt-[20px]   text-center">
+                សែ្វងរកប្រភេទគេហទំព័រនិងទាញគំរូសម្រាប់ប្រើប្រាស់ស្របតាម <br>
+                ​​​​​​​​​​​​​​​​​​​​​​​​​​ តម្រូវការរបស់អ្នកនៅទីនេះ។</p>
+            </div>
+          </section>
+          <section class="mt-[30px] max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4 bg-gray-100 rounded-lg hidden xl:block lg:block ">
+            <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1 font-regular "
+              >
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:space-x-[10px] lg:space-x-6 xl:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 " id="eng">
+                <li>
+                  <a href="../html/template.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] bg-blue-700 rounded md:bg-transparent  hover:text-blue-700 md:p-0 md:dark:text-blue-500"
+                    aria-current="page">All</a>
+                </li>
+                <li>
+                  <a href="blog.html"
+                    class="block py-2 px-3 text-blue-700 text-[13px] lg:text-[16px] rounded hover:bg-gray-100  md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white  ">Blogs</a>
+                </li>
+                <li>
+                  <a href="Portfolio.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  ">Portfolio</a>
+                </li>
+                <li>
+                  <a href="admindashboard.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white  ">Admin Dashboard</a>
+                </li>
+                <li>
+                  <a href="ecommerce.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500  ">E-Commers</a>
+                </li>
+                <li>
+                  <a href="education.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white  ">Education</a>
+                </li>
+                <li>
+                  <a href="buseniss.html"
+                    class="block py-2 px-3 text-gray-900 text-[13px] lg:text-[16px] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white ">Business</a>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </section>
+          <div class="md:mb-[50px] sm:mb-[40px]   max-sm:mb-[20px] xl:hidden lg:hidden max-sm:text-center max-sm:mb-[-110px] max-sm:mt-[20px] sm:text-center sm:mb-[-110px] sm:mt-[10px]">
+            <hr class="mb-1">
+            <button class="text-white font-bold bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2" type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example" aria-controls="drawer-example" data-drawer-body-scrolling="true">
+            បង្ហាញប្រភេទគំរូ
+            </button>
+            <hr>
+          </div>
+          <div id="drawer-example"
+          class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800"
+          tabindex="-1" aria-labelledby="drawer-label">
+          <h5 id="drawer-label"
+            class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg
+              class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+              viewBox="0 0 20 20">
+              <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+            </svg>Info</h5>
+          <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close menu</span>
+          </button>
+          <ul class="border-solid border-[1px] border-gray-600 rounded-lg w-[240px] h-[1640px] ">
+            <div class="ml-[50px] text-[18px] leading-10 mt-[26px]">
+              <li>
+                <a href="../html/template.html" class="text-[26px] ml-[-18px] hover:text-blue-700">Category</a>
+              </li>
+              <li>
+                <a href="admindashboard.html" class="hover:text-blue-700">Admin Dashboard</a>
+              </li>
+              <li>
+                <a href="blog.html" class="hover:text-blue-700 text-blue-700">Blog</a>
+              </li>
+              <li>
+                <a href="Portfolio.html" class="hover:text-blue-700 ">Portfolio</a>
+              </li>
+              <li>
+                <a href="ecommerce.html" class="hover:text-blue-700">E-Commerce</a>
+              </li>
+              <li>
+                <a href="education.html" class="hover:text-blue-700">Education</a>
+              </li>
+              <li>
+                <a href="buseniss.html" class="hover:text-blue-700 ">Business</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="flex justify-center align-items-center mt-10" id="loading">
+          <img src="../img/loading-gif.gif" class="w-10"  alt="">
+        </div>
+  <section class=" w-fit mx-auto grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 cursor-pointer  md:grid-cols-2 justify-items-center justify-center gap-y-8 gap-x-10 mt-10 mb-5 " id="templates">
+    
+  </section>
+<footer class="bg-gray-100 w-full">
+    <div class="m-auto font-regular w-full max-w-screen-xl p-4 py-4 lg:py-8">
+        <div class="md:flex mx-0  md:justify-between mt-[30px] ">
+            <!-- address -->
+            <div class="m-auto md:m-0 mb-5  w-[300px] md:mb-0">
+                <div class="flex justify-center md:flex-start">
+                    <a href="../index.html" class="flex items-center lg:ml-[46px]">
+                        <img src="../img/logo.png"
+                            class="h-9 me-3 " alt=" Logo" />
+                    </a>
+                </div>
+                <br>
+                <p class="text-center font-bold">អាស័យដ្ឋាន</p>
+                <p class="text-[16px] text-center leading-8"> ផ្លូវ ៥៦២ សង្កាត់ បឹងកក់១​ ខណ្ឌ​ សែនសុខ រាជធានីភ្នំពេញ
+                </p>
+            </div>
+            <div
+                class="grid grid-cols-1 md:w-[900px] lg:ml-[100px] lg:gap-8 gap-6 lg:grid-cols-3 sm:grid-cols-1 text-center">
+                <!-- cover message -->
+                <div class=" md:w-full  lg:w-[400px] items-center">
+                    <h2 class="mb-6 text-[20px] font-semibold text-gray-900 uppercase dark:text-white text-center">
+                        ផ្ញើសារតាមរយះអុីម៊ែល</h2>
+                    <ul class="justify-center flex text-gray-500 lg:w-full dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <!-- cover input and send -->
+                            <div data-style="clean" class="flex items-end mb-3">
+                                <ul class="formkit-alert formkit-alert-error" data-element="errors"
+                                    data-group="alert"></ul>
+                                <div data-element="fields" data-stacked="false"
+                                    class="flex items-center w-[400px] max-w-md mb-3 seva-fields formkit-fields">
+                                    <div class="relative w-full formkit-field">
+                                        <label for="member_email"
+                                            class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email
+                                            address</label>
+                                        <div
+                                            class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
+                                            <svg class="w-3.5 h-3.5 text-gray-500 dark:text-gray-400"
+                                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                fill="currentColor" viewBox="0 0 20 16">
+                                                <path
+                                                    d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z">
+                                                </path>
+                                                <path
+                                                    d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <!-- button input email -->
+                                        <input id="member_email"
+                                            class="formkit-input  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                            name="email_address" aria-label="Email Address"
+                                            placeholder="Your email address..." required="" type="email">
+                                    </div>
+                                    <button data-element="submit" class="formkit-submit px-2">
+                                        <span
+                                            class="px-5 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">បញ្ជូន</span>
+                                    </button>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end cover message -->
+                <div class="lg:ml-[150px] lg:w-[350px]">
+                    <h2 class="mb-6 text-[20px] font-semibold text-gray-900 uppercase dark:text-white text-center">
+                        ទំនាក់ទំនងតាមរយះ</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-bold text-center">
+                        <li class="mb-4 hover:underline-sky">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:sothibheng23@gmail.com">sothibheng23@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+855718075288" class="hover:underline">+៨៥៥​ ៧១៨ ០៧៥ ២៨៨</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+855718075288" class="hover:underline">+៨៥៥​ ៧១៨ ០៧៥ ២៨៨</a>
+                        </li>
+                        <li class="mt-4">
+                            <!-- <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-2.5 py-2 text-center me-2 mb-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                            <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-3.5 py-2   text-center me-8 mb-2 hover:text-blue-700"
+                            href="https://web.facebook.com/istad.co" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                          <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-2.5 py-2 text-center me-8 mb-2 hover:text-red-700"
+                            href="https://www.youtube.com/@istad7665" target="_blank"><i class="fab fa-youtube"></i></a>
+                          <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-3 py-2 text-center me-8 mb-2 hover:text-pink-700"
+                            href="#"><i class="fab fa-instagram"></i></a>
+                            <!-- <a class="border border-gray-800 focus:outline-none focus:ring-gray-300 font-medium rounded-full px-2.5 py-2 text-center me-2 mb-2" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class=" w-full text-center bg-gray-200"><span class="px-2"><i
+                class="fa-solid fa-copyright"></i></span>រក្សាសិទ្ធដោយ Zeikki</p>
+<script src="../scripts/jquery-3.7.1.min.js"></script>
+<script src="../scripts/blog.js"></script>
+<script src="../scripts/login _sign.js"></script>
+</footer>
+</body>
+</html>

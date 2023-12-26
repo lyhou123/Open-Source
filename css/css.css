@@ -1,0 +1,15 @@
+body{
+    font-family: 'Noto Serif Khmer', serif;
+}
+#restaurant{
+    color:rgba(0, 0, 0, 0.60);
+}
+.fa-check{
+    color:rgb(19, 19, 239);
+}
+#eng{
+ font-family: 'Inter', sans-serif;;
+}
+#kh{
+    font-family: 'Noto Serif Khmer', serif;
+}
